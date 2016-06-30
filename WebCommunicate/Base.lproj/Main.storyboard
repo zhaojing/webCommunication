@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yar-X6-UXe">
+                                <rect key="frame" x="20" y="20" width="560" height="480"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                            </webView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IDA-za-1ZM">
+                                <rect key="frame" x="20" y="528" width="560" height="30"/>
+                                <color key="backgroundColor" red="0.86274509799999999" green="0.33725490200000002" blue="0.19215686269999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="cqt-sI-6pc"/>
+                                </constraints>
+                                <state key="normal" title="原生button"/>
+                                <connections>
+                                    <action selector="buttonTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qpu-Mm-N8S"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="IDA-za-1ZM" secondAttribute="bottom" constant="42" id="0sw-Ib-T2o"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="yar-X6-UXe" secondAttribute="bottom" constant="100" id="0x2-xx-2lN"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="IDA-za-1ZM" secondAttribute="trailing" id="2Bf-1y-KRz"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="yar-X6-UXe" secondAttribute="trailing" id="CZ1-fU-bPV"/>
+                            <constraint firstItem="IDA-za-1ZM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Kd2-eF-BgJ"/>
+                            <constraint firstItem="yar-X6-UXe" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="lCl-XN-aYH"/>
+                            <constraint firstItem="yar-X6-UXe" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="ssl-g4-V8R"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="yar-X6-UXe" id="dwn-mw-aWg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="280" y="215"/>
+        </scene>
+    </scenes>
+</document>

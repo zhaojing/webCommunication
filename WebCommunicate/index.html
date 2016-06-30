@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html manifest="cache.appcache" lang="en-US">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="format-detection" content="telephone=no" />
+        <title>betta</title>
+    </head>
+    
+    <body>
+        
+        <script type="text/javascript">
+            app.initialize();
+            function hehe(){
+                document.location = "betta:" + "hehe"
+            }
+            function hehe2(){
+                document.location = "betta:" + "hehe2"
+            }
+        </script>
+        
+        <input id="textBetta"type="text"value="betta"style="width:320px;height:44px;" />
+        <input type="button"style="width:320px;height:44px;"onclick="hehe();" />
+        <input type="button"style="width:320px;height:44px;"onclick="hehe2();" />
+        
+    </body>
+    
+</html>
